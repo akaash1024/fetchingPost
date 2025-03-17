@@ -30,8 +30,6 @@ export const Post = () => {
     setPosts(searchResult);
   };
 
-
-  
   //   const Card = (props) => {
   //     const { body, id, title } = props;
   //     console.log(body);
@@ -49,16 +47,16 @@ export const Post = () => {
         onChange={(e) => handleSearch(e)}
       />
 
-      <ul>
+      <ul className="grid grid-four--cols">
         {posts.map((post) => {
           return (
-            <div key={post.id} className="card">
-              <li>
+            
+              <li key={post.id} className="card">
                 <span>Id: {post.id}</span>
                 <h1>Title: {post.title}</h1>
                 <p>Body: {post.body}</p>
               </li>
-            </div>
+            
           );
         })}
       </ul>
