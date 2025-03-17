@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 100rem;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.flex {
+  display: flex;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  background-color: teal;
+  padding: 1rem;
+  margin: 1rem;
+}
